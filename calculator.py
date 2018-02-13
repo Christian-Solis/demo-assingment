@@ -6,9 +6,11 @@
 # Build a calculator that adds two numbers.
 # -----------------------------------------------------------------------------
 
-a = input('Number 1: ')
-b = input('Number 2: ')
-
-c = int(a) + int(b)
-
-print(c)
+try:
+    while True:
+        a = input()
+        b = input()
+        c = int(a) + int(b)
+        print(c)
+except EOFError:
+    pass
